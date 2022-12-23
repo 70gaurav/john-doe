@@ -1,0 +1,93 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat';
+    font-weight: 400;
+    font-size: 30px;
+}
+a{
+    text-decoration: none;
+}
+.wrapper{
+    border-top: 4px solid;
+    border-bottom: 4px solid;
+    height: 100vh;
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:1rem;
+    background-color: white;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+.header .menu i{
+    font-size: 30px;
+}
+.content{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 75%;
+}
+.right h1{
+    padding-bottom: 1rem;
+}
+.look{
+    padding: 1rem 0  ;
+    overflow: hidden;
+    
+}
+.look a{
+    border: 1px solid;
+    padding: 0.5rem;
+    border-radius: 5px;
+    color: black;
+    text-decoration: none;
+    position: relative;
+}
+.look a::before{
+    content: '';
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    left: -100%;
+    top: 0;
+    background-color: black;
+    transition: all 1s ease;
+    z-index: -1;
+}
+.look a:hover::before{
+    top: 0;
+    left: 0;
+}
+.look a:hover{
+    color: white;
+    border: 1px solid black;
+}
+.bold{
+    font-weight: 700;
+}
+.scroll{
+    text-align: center;
+}
+.scroll a{
+    color: black;
+}
+.scroll i{
+    font-weight: 700;
+}
+.section2{
+    background: url(images/bg-1.jpg)no-repeat fixed center / cover;
+    padding: 0 1rem;
+    height: 100vh;
+}
+.top{
+    color: white;
+}
+.top h1{
+    margin: 1rem 0;
+}
