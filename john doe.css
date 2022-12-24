@@ -65,7 +65,7 @@ a{
     left: 0;
 }
 .look a:hover{
-    color: white;
+    color: beige;
     border: 1px solid black;
 }
 .bold{
