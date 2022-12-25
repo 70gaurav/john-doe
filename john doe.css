@@ -32,7 +32,8 @@ a {
     padding: 11rem 25rem;
     letter-spacing: 3px;
 }
-.hello{
+
+.hello {
     position: relative;
 }
 
@@ -78,52 +79,152 @@ a {
     left: 0;
     top: 0;
 }
-.look:hover a{
-    color:white;
+
+.look:hover a {
+    color: white;
 }
-.scroll{
+
+.scroll {
     text-align: center;
-    margin:3rem 0;
+    margin: 3rem 0;
 }
-.section2{
+
+.section2 {
     background: url(images/bg-1.jpg)no-repeat fixed center/cover;
     width: 100%;
     padding: 5rem;
 }
-.what h1,h2{
+
+.what h1,
+h2 {
     color: white;
     padding: 1.5rem 0;
 }
-.i{
+
+.i {
     position: relative;
 }
-.i:before{
+
+.i:before {
     content: '';
-    position:absolute;
+    position: absolute;
     bottom: -10%;
     height: 4px;
     width: 4%;
-    background-color:white;
+    background-color: white;
 }
-.services{
+
+.services {
     display: flex;
     justify-content: space-between;
-    width: 100%;
 }
-.option{
-    width: 50%;
+
+.option {
     padding: 5rem 0;
+    position: relative;
 }
-.option i{
+
+.option p {
+    width: 48%;
+}
+
+.option h4,
+p {
+    color: white;
+    margin: 0.5rem 0;
+}
+
+.option i {
     font-size: 35px;
-    color:white;
+    color: white;
     border: 1px solid white;
-    padding:1rem;
+    padding: 1rem;
 }
-.services .right .option{
+
+.services .right .option {
     display: flex;
     flex-direction: column;
     justify-content: end;
     align-items: flex-end;
     text-align: end;
+}
+.left .option:first-of-type:before {
+    content: '';
+    position: absolute;
+    top: 114px;
+    left: 100px;
+    width: 42%;
+    height: 2px;
+    background-color: white;
+}
+
+.left .option:first-of-type:after {
+    content: '';
+    position: absolute;
+    top: 275px;
+    right: -81px;
+    width: 65%;
+    height: 2px;
+    background-color: white;
+    transform: rotate(45deg);
+}
+.left .option:last-of-type:before {
+    content: '';
+    position: absolute;
+    top: 114px;
+    left: 100px;
+    width: 42%;
+    height: 2px;
+    background-color: white;
+}
+
+.left .option:last-of-type:after {
+    content: '';
+    position: absolute;
+    top: -47px;
+    right: -81px;
+    width: 65%;
+    height: 2px;
+    background-color: white;
+    transform: rotate(-45deg);
+}
+.right .option:first-of-type:before {
+    content: '';
+    position: absolute;
+    top: 114px;
+    left: 282px;
+    width: 42%;
+    height: 2px;
+    background-color: white;
+}
+
+.right .option:first-of-type:after {
+    content: '';
+    position: absolute;
+    top: 282px;
+    right: 306px;
+    width: 72%;
+    height: 2px;
+    background-color: white;
+    transform: rotate(-45deg);
+}
+.right .option:last-of-type:before {
+    content: '';
+    position: absolute;
+    top: 114px;
+    left: 275px;
+    width: 42%;
+    height: 2px;
+    background-color: white;
+}
+
+.right .option:last-of-type:after {
+    content: '';
+    position: absolute;
+    top: -54px;
+    right: 313px;
+    width: 72%;
+    height: 2px;
+    background-color: white;
+    transform: rotate(45deg);
 }
