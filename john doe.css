@@ -14,7 +14,7 @@ a {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 2rem;
+    padding: 1rem 2rem;
     position: fixed;
     top: 0;
     width: 100%;
@@ -129,8 +129,8 @@ h2 {
     width: 48%;
 }
 
-.option h4,
-p {
+.option .white,
+h4 {
     color: white;
     margin: 0.5rem 0;
 }
@@ -149,6 +149,7 @@ p {
     align-items: flex-end;
     text-align: end;
 }
+
 .left .option:first-of-type:before {
     content: '';
     position: absolute;
@@ -169,6 +170,7 @@ p {
     background-color: white;
     transform: rotate(45deg);
 }
+
 .left .option:last-of-type:before {
     content: '';
     position: absolute;
@@ -189,6 +191,7 @@ p {
     background-color: white;
     transform: rotate(-45deg);
 }
+
 .right .option:first-of-type:before {
     content: '';
     position: absolute;
@@ -209,6 +212,7 @@ p {
     background-color: white;
     transform: rotate(-45deg);
 }
+
 .right .option:last-of-type:before {
     content: '';
     position: absolute;
@@ -229,26 +233,30 @@ p {
     background-color: white;
     transform: rotate(45deg);
 }
-.computer img{
+
+.computer img {
     position: absolute;
     top: 30%;
     left: 35%;
     width: 500px;
 }
-.port{
+
+.port {
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.portfolio{
+
+.portfolio {
     border: 1px solid white;
-    color:white;
-    padding:1rem;
-    position:relative;
+    color: white;
+    padding: 1rem;
+    position: relative;
     overflow: hidden;
     z-index: 0;
 }
-.portfolio::before{
+
+.portfolio::before {
     content: '';
     position: absolute;
     top: 0;
@@ -256,12 +264,159 @@ p {
     background-color: white;
     width: 100%;
     height: 100%;
-    transition:all 1s ease;
+    transition: all 1s ease;
     z-index: -1;
 }
-.portfolio:hover::before{
-    left:0;
+
+.portfolio:hover::before {
+    left: 0;
 }
-.portfolio:hover{
-    color:black;
+
+.portfolio:hover {
+    color: black;
+}
+
+.section3 {
+    padding: 10rem 5rem;
+}
+
+.section3 h1 {
+    position: relative;
+}
+
+.section3 h3 {
+    padding: 3rem 0;
+}
+
+.section3 .work::before {
+    content: '';
+    position: absolute;
+    background-color: black;
+    width: 3%;
+    height: 4px;
+    bottom: -25px;
+}
+
+.fonts {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.circle {
+    font-size: 30px;
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+    margin: 7rem 2rem 5rem 2rem;
+    border: 2px dotted;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.circle:hover {
+    color: white;
+    background-color: black;
+    border: 1px solid;
+}
+.meeting h1{
+    text-align: center;
+}
+.meet{
+    display: flex;
+    justify-content:space-between   ;
+    align-items: center;
+    padding: 3rem;
+}
+.meet img{
+    width: 30%;
+
+}
+.meet p{
+    width: 60%;
+    height: 300px;
+    line-height: 3rem;
+}
+.section4{
+    background:url(images/bg-1.jpg) no-repeat fixed center /cover;
+    padding: 5rem;
+}
+.section4 h1, h3{
+    color:white;
+}
+.section4 h3{
+    margin-top: 4rem;
+}
+.section4 h1{
+    position: relative;
+}
+.section4 h1:before{
+    content:'';
+    position: absolute;
+    background-color: white;
+    width: 4%;
+    height: 4px;
+    bottom: -20px;
+}
+.page{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 4rem 0;
+}
+.anchor a{
+    color: white;
+}
+.page .anchor{
+    border: 1px solid white;
+    text-align: center;
+    margin: 0 1.5rem;
+    padding: 1rem;
+    position: relative;
+    overflow: hidden;
+    z-index: 0;
+}
+.anchor::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    background-color: white;
+    width: 100%;
+    height: 100%;
+    transition: all 1s ease;
+    z-index: -1;
+}
+.anchor:hover::before{
+    left: 0;
+}
+.anchor:hover a{
+    color: black;
+}
+.threebox{
+    display:flex ;
+    justify-content: space-around;
+    align-items: center;
+}
+.box{
+    background: url(images/folio.jpg) no-repeat scroll center /cover;
+    width: 30%;
+    height: 400px;
+    overflow: hidden;
+    position: relative;
+
+}
+.box::before{
+    content: '';
+    position: absolute;
+    bottom: -50%;
+    left: 0;
+    width: 100%;
+    height: 50%;
+    background-color: rgba(0,0,0,0.5);
+    transition: all 1s ease;
+}
+.box:hover::before{
+    bottom: 0;
 }
