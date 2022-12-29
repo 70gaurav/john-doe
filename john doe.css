@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Roboto mono;
+    font-family: Roboto Mono;
 }
 
 a {
@@ -419,4 +419,120 @@ h4 {
 }
 .box:hover::before{
     bottom: 0;
+}
+.chain i{
+    position: absolute;
+    bottom: -25%;
+    left: 40%;
+    font-size: 30px;
+    background-color: white;
+    padding: 1rem;
+    border-radius: 50%;
+    transition: all 1s ease;
+}
+.box:hover .chain i{
+    bottom: 30%;
+    left: 40%;
+}
+.section5{
+    padding: 5rem;
+}
+.fallen{
+    text-align: center;
+    margin-top: 8rem;
+    position: relative;
+}
+.fallen::before{
+    content: '';
+    position: absolute;
+    bottom: -20px;
+    left: 620px;
+    width: 5%;
+    height: 4px;
+    background-color: black;
+}
+.s5boxes{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 7rem;
+}
+.s5box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 32%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.s5box .go{
+    border: 1px solid;
+    border-radius: 5px;
+    padding:1.5rem;
+    position: relative;
+    overflow: hidden;
+    width: 50%;
+    
+}
+.go::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    transition: all 1s ease;
+    z-index: -1;
+}
+.go:hover a{
+    color: white;
+}
+.go:hover::before{
+    top: 0;
+    left: 0;
+}
+.s5box p{
+    padding: 3rem 0;
+}
+.section6{
+    background:url(images/bg-1.jpg) no-repeat fixed center /cover;
+    padding: 5rem;  
+}
+.john{
+    margin-bottom: 4rem;
+    position: relative;
+}
+.john h1{
+    color: white;
+}
+.john::before{
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    width: 4%;
+    height: 4px;
+    background-color: white;
+}
+.about{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5rem;
+    
+}
+.pic{
+    width: 20%;
+}
+.pic img{
+    border-radius: 50%;
+    width: 100%;
+}
+.bio{
+    width: 70%;
+}
+.bio p{
+    color: white;
+    width: 100%;
+    margin-bottom: 2rem;
+    letter-spacing: 2px;
 }
