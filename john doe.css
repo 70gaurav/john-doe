@@ -536,3 +536,62 @@ h4 {
     margin-bottom: 2rem;
     letter-spacing: 2px;
 }
+.download {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.resume {
+    border: 1px solid white;
+    color: white;
+    margin-top: 5rem;
+    padding: 1rem;
+    position: relative;
+    overflow: hidden;
+    z-index: 0;
+}
+
+.resume::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    background-color: white;
+    width: 100%;
+    height: 100%;
+    transition: all 1s ease;
+    z-index: -1;
+}
+
+.resume:hover::before {
+    left: 0;
+}
+
+.resume:hover {
+    color: black;
+}
+.section7{
+    display: flex;
+}
+.section7 .black,.white{
+    width: 50%;
+}
+.black{
+    padding-left: 5rem;
+    background-color: black;
+    width: 100%;
+}
+.black h1{
+    color: white;
+    margin: 3rem 0;
+    position: relative;
+}
+.black h1::before{
+    content: '';
+    position: absolute;
+    bottom:-10px;
+    width: 6%;
+    height: 4px;
+    background-color: white;
+}
