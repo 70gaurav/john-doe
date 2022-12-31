@@ -595,3 +595,10 @@ h4 {
     height: 4px;
     background-color: white;
 }
+.black p{
+    color:white;
+    line-height: 3rem;
+}
+.gained{
+    margin-top: 2rem;
+}
