@@ -578,7 +578,7 @@ h4 {
     width: 50%;
 }
 .black{
-    padding-left: 5rem;
+    padding: 5rem 0 5rem 5rem;
     background-color: black;
     width: 100%;
 }
@@ -601,4 +601,62 @@ h4 {
 }
 .gained{
     margin-top: 2rem;
+}
+.lang{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    padding:5rem;
+}
+.name h2{
+    color:black;
+    font-weight: 400;
+    letter-spacing: 2px;
+}
+.language{
+    text-align: center;
+    margin: 5rem 0;
+    width: 30%;
+}
+.sign i{
+    font-size: 40px;
+}
+.section8{
+    padding: 5rem;
+}
+.section8 .touch h1{
+    margin: 2rem 0;
+    position: relative;
+}
+.touch h2{
+    color: black;
+    font-weight: 400;
+}
+
+.touch h1::before{
+    content: '';
+    position: absolute;
+    bottom: -15px;
+    width: 4%;
+    height: 4px;
+    background-color: black;
+}
+.contact{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.details{
+    text-align: center;
+    margin: 5rem 0;
+}
+.mark i{
+    font-size: 25px;
+    border: 1px solid grey;
+    padding: 1rem;
+}
+.text p{
+    padding-top: 1.5rem;
+    letter-spacing: 2px;
 }
